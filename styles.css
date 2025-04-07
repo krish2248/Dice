@@ -1,0 +1,172 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background for contrast */
+    color: #333; /* Dark gray text for better readability */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(240, 240, 240, 0.9); /* Very light gray with 90% opacity */
+    color: #000; /* Black text */
+    padding: 20px 0;
+    font-size: 2.5rem;
+    border-bottom: 3px solid rgba(200, 200, 200, 0.9); /* Subtle translucent border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px; /* Add spacing for a modern look */
+}
+
+header h1 a {
+    color: #000; /* Black text for the link */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header h1 a:hover {
+    color: #555; /* Dark gray on hover */
+}
+
+.container {
+    padding: 30px;
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #000; /* Black headings */
+    font-size: 2rem;
+    text-transform: uppercase; /* Add uppercase for emphasis */
+    letter-spacing: 1.5px; /* Add spacing for a modern look */
+    display: inline-block;
+    padding-bottom: 5px;
+    text-decoration: none; /* Removes underlining */
+    border-bottom: none; /* Removes the border underline */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Increased spacing for better layout */
+}
+
+.dice-container {
+    text-align: center;
+    border: 2px solid #333; /* Add border for focus */
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* White background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.dice-container:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.dice-image {
+    width: 96px; /* Reduced from 120px to 96px (20% smaller) */
+    height: auto;
+}
+
+.result-box {
+    margin: 30px auto;
+    padding: 25px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    font-size: 1.5rem;
+    border: 2px solid #333; /* Thicker border for emphasis */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.result-box h2 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+footer {
+    background-color: rgba(240, 240, 240, 0.9); /* Very light gray with 90% opacity */
+    color: #000; /* Black text */
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 3px solid rgba(200, 200, 200, 0.9); /* Subtle translucent border */
+}
+
+footer a {
+    color: #000; /* Black links */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer a:hover {
+    color: #555; /* Dark gray on hover */
+}
+
+/* Loading screen styles */
+#loading-screen {
+    display: none;
+}
+
+.spinner {
+    display: none;
+}
+
+/* Remove all animations */
+* {
+    animation: none !important;
+    transition: none !important;
+}
+
+button.roll-dice {
+    background-color: #000; /* Black button */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.roll-dice:hover {
+    background-color: #333; /* Dark gray on hover */
+}
+
+button.roll-dice:active {
+    transform: scale(0.95); /* Slight shrink on click */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .result-box {
+        width: 95%;
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
