@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD Dice Roller</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="#" id="refresh-page">D&D Dice</a></h1>
+    </header>
+    <div class="container">
+        <h2>Dice Roller</h2>
+        <div class="buttons">
+            <div class="dice-container" >
+                <img src="images/4D.jpg" class="dice-image" data-sides="" alt="" aria-label="Roll a 4-sided dice">
+                <p></p>
+            </div>
+            <div class="dice-container">
+                <img src="images/4D.jpg" class="dice-image" data-sides="4" alt="4-Sided Dice">
+                <p>4 D</p>
+            </div>
+            <div class="dice-container">
+                <img src="images/6D.jpg" class="dice-image" data-sides="6" alt="6-Sided Dice">
+                <p>6 D</p>
+            </div>
+            <div class="dice-container">
+                <img src="images/8D.jpg" class="dice-image" data-sides="8" alt="8-Sided Dice">
+                <p>8 D</p>
+            </div>
+            <div class="dice-container">
+                <img src="images/10D.jpg" class="dice-image" data-sides="10" alt="10-Sided Dice">
+                <p>10 D</p>
+            </div>
+            <div class="dice-container">
+                <img src="images/12D.jpg" class="dice-image" data-sides="12" alt="12-Sided Dice">
+                <p>12 D</p>
+            </div>
+            <div class="dice-container">
+                <img src="images/20D.jpg" class="dice-image" data-sides="20" alt="20-Sided Dice">
+                <p>20 D</p>
+            </div>
+            <div class="dice-container">
+                <img src="images/100D.jpg" class="dice-image" data-sides="100" alt="100-Sided Dice">
+                <p>100 D</p>
+            </div>
+        </div>
+        <div class="result-box">
+            <h2>Result: <span id="dice-result">-</span></h2>
+        </div>
+        <button id="theme-toggle">Elegant Mode</button>
+    </div>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    <footer>
+        <p></p>
+        <a href="https://www.instagram.com/notkrish03/" target="_blank">Instagram</a> |
+        <a href="https://www.linkedin.com/in/krish-soni-460932228/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/krish2248" target="_blank">GitHub</a> |
+        <a href="https://sonikrish.com" target="_blank">Portfolio</a> |
+        <a href="https://medium.com/@sonikrish2248" target="_blank">Medium</a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
